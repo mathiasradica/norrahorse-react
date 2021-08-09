@@ -1,0 +1,377 @@
+{
+    "products": [
+        {
+            "title": "Norra Pikku Sankkari 20 kg täydennysrehu",
+            "url": "norra-pikku-sankkari-taydennysrehu-20-kg",
+            "imageUrl": "/img/924610.jpg",
+            "price": 28.00,
+            "vat": 0.14,
+            "sellingPoints": [
+                "Hyvälaatuisia rasvahappoja",
+                "Reilusti kuituja ja antioksidantteja",
+                "Maltillisesti energiaa ja sokeria",
+                "Biotiini vaikuttaa kavioiden sarveisaineen kasvuun",
+                "Raikas omenan maku"
+            ],
+            "shortDescription": "Norra Pikku Sankari on erityisesti poneille ja alkuperäisrotuisille harrastehevosille suunniteltu täydennysrehu. Rehun tarkoin valitut raaka-aineet tasapainottavat kotoista karkearehua.",
+            "longDescription": "Norra Pikku Sankari sisältää pellavapuristetta ja kasviöljyn tuomia Omega-3 ja Omega-6 -rasvahappoja Pellavapuristeen lisäksi rehussa on runsaskuituista melassileikettä sekä elävää hiiva. Raikas omenan maku edistää maittavuutta. Rehun valmistuksessa ei ole käytetty lainkaan kokojyväkauraa, vain kuituisempia kuoriosia leseen ja rehujauhon muodossa. Täydennysrehu täyttää myös ponin ja hevosen vitamiini- ja kivennäistarpeet.",
+            "inStore": "Varastossa",
+            "stock": 10,
+            "contents": {
+                "SRV (sulava raakavalkuainen)": "9,5 %",
+                "Raakarasva": "4,9 %",
+                "Raakakuitu": "16,8 %",
+                "Tuhka": "7,8 %",
+                "Energia": "11,5 MJ/kg ka",
+                "Kalsium": "0,9 %",
+                "Fosfori": "0,4 %",
+                "Magnesium": "0,3 %",
+                "Natrium": "0,45 %",
+                "A-vitamiini": "6,500 IU/kg",
+                "D3-vitamiini": "0,25 mg/kg",
+                "E-vitamiini": "500 mg/kg",
+                "Koboltti": "0,25 mg/kg",
+                "Jodi": "1 mg/kg",
+                "Org. seleeni": "0,1 mg/kg",
+                "Lysiini": "0,5 %",
+                "Tärkkelys": "13,5 %",
+                "Sokeri": "4,5 %",
+                "B1-vitamiini": "26 mg/kg",
+                "B2-vitamiini": "13 mg/kg",
+                "Pantoteenihappo": "23 mg/kg",
+                "Koliinkloridi": "1300 mg/kg",
+                "Niasiini": "59 mg/kg",
+                "B6-vitamiini": "16 mg/kg",
+                "Foolihappo": "8 mg/kg",
+                "B12-vitamiini": "0,2 mg/kg",
+                "Fe (rauta)": "100 mg/kg",
+                "Biotiini": "2,0 mg/kg"
+            },
+            "moreInformation": {
+                "Pakkaustyyppi :": "pikkusäkki",
+                "Lähetyspaikka :": "Kaipiainen / Production, Kaipiainen / Warehouse",
+                "EAN :": "6418363224614",
+                "Lisätietoa :": "Valmistettu Kouvolassa. Parhainta ennen 9 kuukautta valmistuspäivästä asianmukaisesti varastoituna. Tuotteen valmistuspäivä näkyy irtorehujen osalta kuormakirjassa ja säkkirehujen osalta tuoteselosteessa.",
+                "Rehun tyyppi :": "Täydennysrehu hevosille",
+                "Koostumus :": "Melassileike, Ohra, Kauralese, Rypsirouhe, Kaurarehujauho, Rouheinen pellavapuriste, Juurikasmelassi, Rypsiöljy, Kalsiumkarbonaatti, Natriumkloridi, Monokalsiumfosfaatti, Esiseos, Magnesiumoksidi, Biotiiniesiseos",
+                "Käyttöohjeet :": "Norra Pikku Sankari on erityisesti poneille ja muille alkuperäisroduille sekä harrastehevosille kehitetty täydennysrehu./ Norra Pikku Sankari är ett kompleteringsfoder för hobbyhästar och -ponnyer. Annostus/Dosering: Harrastehevoset/Hobbyhästar 1-3 kg/pv/dag Ponit/Ponnyer 0,5-2 kg/pv/dag"
+            },
+            "usageRate": {
+                "Harrastehevoset :": "1-3 kg/pvä",
+                "Ponit :": "0,5-2 kg/pvä"
+            },
+            "features": {}
+        },
+        {
+            "title": "Norra Optimal 20 kg kauraton täydennysrehu",
+            "url": "norra-optimal-taydennysrehu-20-kg",
+            "imageUrl": "/img/924620.jpg",
+            "price": 25.00,
+            "vat": 0.14,
+            "sellingPoints": [
+                "Kauraton, maittava täydennysrehu",
+                "Runsaasti hyvin sulavia, turvallisina energialähteinä toimivia kuituja",
+                "Matala tärkkelys- ja sokeripitoisuus"
+            ],
+            "shortDescription": "Norra Optimal on kauraton täydennysrehu. Rehu sisältää paljon hyvin sulavia kuituja, jotka tukevat ruoansulatuskanavan normaalia toimintaa.",
+            "longDescription": "Rehu soveltuu erityisen hyvin hevosille ja poneille, joilla halutaan välttää nopeita hiilihydraatteja. Rehu sisältää vain vähän sokeria ja tärkkelystä, mutta riittävästi energiaa ja valkuaista. Optimal tuo ruokintaan myös tarvittavat vitamiinit ja kivennäiset.",
+            "inStore": "Varastossa",
+            "stock": 10,
+            "contents": {
+                "SRV (sulava raakavalkuainen)": "13,2 %",
+                "Raakarasva": "5,5 %",
+                "Raakakuitu": "12,3 %",
+                "Tuhka": "7,2 %",
+                "Energia": "12,4 MJ/kg ka",
+                "Kalsium": "0,8 %",
+                "Fosfori": "0,5 %",
+                "Magnesium": "0,3 %",
+                "Natrium": "0,3 %",
+                "A-vitamiini": "6,500 IU/kg",
+                "D3-vitamiini": "1500 ky/kg",
+                "E-vitamiini": "700 mg/kg",
+                "Koboltti": "0,25 mg/kg",
+                "Jodi": "1,5 mg/kg",
+                "Org. seleeni": "0,1 mg/kg",
+                "Lysiini": "0,7 %",
+                "Tärkkelys": "5,1 %",
+                "Sokeri": "7,9 %",
+                "B1-vitamiini": "26 mg/kg",
+                "B2-vitamiini": "13 mg/kg",
+                "Pantoteenihappo": "23 mg/kg",
+                "Koliinkloridi": "1300 mg/kg",
+                "Niasiini": "59 mg/kg",
+                "B6-vitamiini": "16 mg/kg",
+                "Foolihappo": "8 mg/kg",
+                "B12-vitamiini": "0,2 mg/kg",
+                "Fe (rauta)": "100 mg/kg",
+                "Biotiini": "2,0 mg/kg"
+            },
+            "moreInformation": {
+                "Pakkaustyyppi :": "pikkusäkki",
+                "Lähetyspaikka :": "Kaipiainen / Production, Kaipiainen / Warehouse",
+                "EAN :": "6418363224621",
+                "Lisätietoa :": "Valmistettu Kouvolassa. Parhainta ennen 9 kuukautta valmistuspäivästä asianmukaisesti varastoituna. Tuotteen valmistuspäivä näkyy irtorehujen osalta kuormakirjassa ja säkkirehujen osalta tuoteselosteessa.",
+                "Rehun tyyppi :": "Täydennysrehu hevosille",
+                "Koostumus :": "Melassileike, Rypsirouhe, Vehnälese, Vehnärehujauho, Rouheinen pellavapuriste, Juurikasmelassi, Rypsiöljy, Kalsiumkarbonaatti, Esiseos, Natriumkloridi, Biotiiniesiseos",
+                "Käyttöohjeet :": "Täydennysrehu hevosille/Kompletteringsfoder för hästar. Turvotettava ennen syöttöä/Svälla innan matning. Annostus / Dosering: Harrastushevoset / Hobbyhästar 1-3 kg/pv/dag. Kilpahevoset / Tävlingshästar 2-4 kg/pv/dag. Varsat ja nuoret / Föl och unghästar 1-2 kg/pv/dag"
+            },
+            "usageRate": {
+                "Varsat ja nuoret hevoset :": "1-2 kg/pvä",
+                "Harrastehevoset- ja ponit :": "1-3 kg/pvä",
+                "Kilpahevoset :": "2-4 kg/pvä",
+                "Lisätiedot :": "Pitää turvottaa ennen syöttämistä. Käyttömäärään vaikuttaa aina hevosen tai ponin muu ruokinta."
+            },
+            "features": {
+                "Tilavuuspaino": "67 g/dl"
+            }
+        },
+        {
+            "title": "Norra ADE 6 kg vitamiini",
+            "url": "norra-ade-vitamiiniseos-6-kg",
+            "imageUrl": "/img/923884.jpg",
+            "price": 25.00,
+            "vat": 0.14,
+            "sellingPoints": [
+                "Helppokäyttöinen ja maittava rae",
+                "Sisältää runsaasti E-vitamiinia",
+                "Tukee hevosen omaa immuunipuolustusta, luustoa ja lihaksia"
+            ],
+            "shortDescription": "Norra ADE -vitamiini on rakeinen ja monipuolinen vitamiiniseos hevosten sisäruokintakauden vitamiinitäydennykseen. Tuote sopii kaikille hevosille.",
+            "longDescription": "Norra ADE -vitamiinilisä turvaa riittävän rasvaliukoisten vitamiinien saannin sisäruokintakaudella, kun karkearehujen vitamiinipitoisuus laskee varastoinnin aikana. A-vitamiini on välttämätön nuoren hevosen luuston ja lihasten kasvulle. Sitä tarvitaan myös hyvän näkökyvyn ja terveen ihon ylläpitämiseen. E-vitamiini on antioksidantti, jota tarvitaan lihasten toimintaan sekä vastustuskyvyn ylläpitämiseen. D-vitamiinia osallistuu luuston kehittymiseen säätelemällä kalsiumin imeytymistä. Kaikki lisätty seleeni on orgaanista seleeniä.",
+            "inStore": "Varastossa",
+            "stock": 10,
+            "contents": {
+                "SRV (sulava raakavalkuainen)": "6,7 %",
+                "Raakarasva": "1,8 %",
+                "Raakakuitu": "11,6 %",
+                "Tuhka": "4,4 %",
+                "Energia": "12,1 MJ/kg ka",
+                "Kalsium": "0,6 %",
+                "Fosfori": "0,3 %",
+                "Magnesium": "0,2 %",
+                "Natrium": "0,1 %",
+                "A-vitamiini": "450,000 IU/kg",
+                "D3-vitamiini": "100000 ky/kg",
+                "E-vitamiini": "5000 mg/kg",
+                "Koboltti": "0,1 mg/kg",
+                "Jodi": "0,1 mg/kg",
+                "Org. seleeni": "10,0 mg/kg",
+                "Lysiini": "0,35 %",
+                "Tärkkelys": "22,8 %",
+                "Sokeri": "5,6 %",
+                "B1-vitamiini": "3 mg/kg",
+                "B2-vitamiini": "2 mg/kg",
+                "Pantoteenihappo": "4 mg/kg",
+                "Koliinkloridi": "538 mg/kg",
+                "Niasiini": "54 mg/kg",
+                "B6-vitamiini": "3 mg/kg",
+                "Fe (rauta)": "122 mg/kg",
+                "Biotiini": "0,1 mg/kg"
+            },
+            "moreInformation": {
+                "Olomuoto": "Rae",
+                "Pakkaustyyppi :": "kappale",
+                "Lähetyspaikka :": "Kaipiainen / Production, Kaipiainen / Warehouse",
+                "EAN :": "6418363223884",
+                "Lisätietoa :": "Valmistettu Kouvolassa. Parhainta ennen 9 kuukautta valmistuspäivästä asianmukaisesti varastoituna. Tuotteen valmistuspäivä näkyy irtorehujen osalta kuormakirjassa ja säkkirehujen osalta tuoteselosteessa.",
+                "Rehun tyyppi :": "Täydennysrehu hevosille",
+                "Koostumus :": "Ohra, Melassileike, Vehnä, Kauralese, Kaurarehujauho, Juurikasmelassi, Orgaaninen seleeniesiseos",
+                "Käyttöohjeet :": "Norra ADE on monipuolinen vitamiinirehu hevosille. Norra ADE är ett mångsidig vitaminfoder för hästar. Annostus/Dosering Urheiluhevoset/tävlingshästar 45-50 g/vrk/dag Harrastehevoset/hobbyhästar 25-30 g/vrk/dag Ponit/ponny 10-15 g/pv/dag Varsat/föl 10-15 g/pv/dag Kantavat ja imettävät tammat/avelshästar 30 g/pv/dag"
+            },
+            "usageRate": {
+                "Varsat :": "10-15 g/vrk",
+                "Harrastehevoset :": "25-30 g/vrk",
+                "Ponit :": "10-15 g/vrk",
+                "Kantavat ja imettävät tammat :": "30 g/vrk",
+                "Urheiluhevoset :": "45-50 g/vrk"
+            },
+            "features": {
+                "Tilavuuspaino": "65 g/dl"
+            }
+        },
+        {
+            "title": "Norra Sankari 20 kg täydennysrehu",
+            "url": "norra-sankari-taydennysrehu-20-kg",
+            "imageUrl": "/img/924641.jpg",
+            "price": 29.00,
+            "vat": 0.14,
+            "sellingPoints": [
+                "Maittavaa energiaa ja hyvälaatuisia rasvahappoja",
+                "Monipuolinen ja maittava – mukana omenan maku!",
+                "Runsaasti antioksidantteja",
+                "Kuituja suolistolle",
+                "Biotiini edistää kavioiden sarveisaineen kasvua"
+            ],
+            "shortDescription": "Norra Sankari on erityisesti suomenhevosille suunniteltu täysrehun kaltainen täydennysrehu. Rehu täyttää myös hevosen vitamiini- ja kivennäistarpeet.",
+            "longDescription": "Norra Sankari sisältää tarkoin valittuja raaka-aineita täydentämään kotoisia karkearehuja. Rehu sisältää pellavapuristetta ja kasviöljyn tuomia Omega-3 ja Omega-6 –rasvahappoja. Pellavapuristeen lisäksi rehussa on runsaskuituista melassileikettä sekä elävää hiivaa. Norra Sankariin on lisätty myös biotiinia. Omena-aromi tekee rehusta hevoselle mieluisan./nSankarin kehityksessä on ollut mukana Luonnonvarakeskus (LUKE).",
+            "inStore": "Varastossa",
+            "stock": 10,
+            "contents": {
+                "SRV (sulava raakavalkuainen)": "9,2 %",
+                "Raakarasva": "5,9 %",
+                "Raakakuitu": "10,8 %",
+                "Tuhka": "7,6 %",
+                "Energia": "12,4 MJ/kg ka",
+                "Kalsium": "0,8 %",
+                "Fosfori": "0,5 %",
+                "Magnesium": "0,3 %",
+                "Natrium": "0,5 %",
+                "A-vitamiini": "6,000 IU/kg",
+                "D3-vitamiini": "1500 ky/kg",
+                "E-vitamiini": "600 mg/kg",
+                "Koboltti": "0,2 mg/kg",
+                "Jodi": "1,4 mg/kg",
+                "Org. seleeni": "0,1 mg/kg",
+                "Lysiini": "0,5 %",
+                "Tärkkelys": "14,9 %",
+                "Sokeri": "6,5 %",
+                "B1-vitamiini": "26 mg/kg",
+                "B2-vitamiini": "13 mg/kg",
+                "Pantoteenihappo": "23 mg/kg",
+                "Koliinkloridi": "1300 mg/kg",
+                "Niasiini": "59 mg/kg",
+                "B6-vitamiini": "16 mg/kg",
+                "Foolihappo": "8 mg/kg",
+                "B12-vitamiini": "0,2 mg/kg",
+                "Fe (rauta)": "100 mg/kg",
+                "Biotiini": "2,0 mg/kg"
+            },
+            "moreInformation": {
+                "Pakkaustyyppi :": "pikkusäkki",
+                "Lähetyspaikka :": "Kaipiainen / Production, Kaipiainen / Warehouse",
+                "EAN :": "6418363212314",
+                "Lisätietoa :": "Valmistettu Kouvolassa. Parhainta ennen 9 kuukautta valmistuspäivästä asianmukaisesti varastoituna. Tuotteen valmistuspäivä näkyy irtorehujen osalta kuormakirjassa ja säkkirehujen osalta tuoteselosteessa.",
+                "Rehun tyyppi :": "Täydennysrehu hevosille",
+                "Koostumus :": "Melassileike, Kaura, Vehnälese, Vehnärehujauho, Rypsirouhe, Juurikasmelassi, Rypsiöljy, Rouheinen pellavapuriste, Kalsiumkarbonaatti, Natriumkloridi, Monokalsiumfosfaatti, Esiseos, Magnesiumoksidi, Biotiiniesiseos",
+                "Käyttöohjeet :": "Norra Sankari on erityisesti Suomenhevosille kehitetty täysrehu. Sisältää kaikki hevosen tarvitsemat ravintoaineet heinän ohella. Suuret kerta-annokset syytä turvottaa ennen syöttöä. Käyttömäärät: Harrastehevoset 1-3 kg/pv, kilpahevoset 2-5 kg/pv, kantavat ja imettävät tammat 2-5 kg/pv, varsat ja nuoret 1-2 kg/pv. Norra Sankari är ett kompletteringfoder för hästar. Dosering: Hobbyhästar 1-3 kg/dag, tävlingshästar 2-5 kg/dag, avelshästar 2-5 kg/dag, föl och unghästar 1-2 kg/dag."
+            },
+            "usageRate": {
+                "Varsat ja nuoret hevoset :": "1-2 kg/pvä",
+                "Harrastehevoset :": "1-3 kg/pvä",
+                "Kantavat ja imettävät tammat :": "2-5 kg/pvä",
+                "Kilpahevoset :": "2-5 kg/pvä",
+                "Lisätiedot :": "Käyttömäärään vaikuttaa aina hevosen tai ponin muu ruokinta. Suuret kerta-annokset syytä turvottaa ennen syöttöä."
+            },
+            "features": {
+                "Tilavuuspaino": "65 g/dl"
+            }
+        },
+        {
+            "title": "Norra Pure Protein 20 kg täydennysrehu",
+            "url": "norra-pure-protein-taydennysrehu-20-kg",
+            "imageUrl": "/img/924651.jpg",
+            "price": 26.00,
+            "vat": 0.14,
+            "sellingPoints": [
+                "Maittava rypsipohjainen valkuaistäydennysrehu",
+                "Rypsistä aminohappoja, mutta vähän tärkkelystä"
+            ],
+            "shortDescription": "Norra Pure Protein on maittava, rakeinen valkuaistäydennysrehu kasvavien varsojen, siitostammojen ja kilpahevosten kasvaneeseen valkuaisen tarpeeseen.",
+            "longDescription": "Norra Pure Proteinissa on pääraaka-aineena rypsiä, joka sisältää runsaasti hyvälaatuisia aminohappoja, lysiiniä ja metioniinia. Rypsi on soijaa ekologisempi valkuaisen lähde. Maittavuuden takaavat melassileike sekä juurikasmelassi.",
+            "inStore": "Varastossa",
+            "stock": 10,
+            "contents": {
+                "SRV (sulava raakavalkuainen)": "25,0 %",
+                "Raakarasva": "2,8 %",
+                "Raakakuitu": "11,6 %",
+                "Tuhka": "6,8 %",
+                "Energia": "11,7 MJ/kg ka",
+                "Kalsium": "0,7 %",
+                "Fosfori": "1,0 %",
+                "Magnesium": "0,4 %",
+                "Natrium": "0,1 %",
+                "Lysiini": "0,5 %",
+                "Tärkkelys": "13,5 %",
+                "Sokeri": "4,5 %",
+                "Fe (rauta)": "100 mg/kg"
+            },
+            "moreInformation": {
+                "Pakkaustyyppi :": "pikkusäkki",
+                "Lähetyspaikka :": "Kaipiainen / Production, Kaipiainen / Warehouse",
+                "EAN :": "6418363246517",
+                "Lisätietoa :": "Valmistettu Kouvolassa. Parhainta ennen 9 kuukautta valmistuspäivästä asianmukaisesti varastoituna. Tuotteen valmistuspäivä näkyy irtorehujen osalta kuormakirjassa ja säkkirehujen osalta tuoteselosteessa.",
+                "Rehun tyyppi :": "Täydennysrehu hevosille",
+                "Koostumus :": "Rypsirouhe, Melassileike, Juurikasmelassi",
+                "Käyttöohjeet :": "Norra Pure Protein on hevosten maittava rakeinen valkuaisrehu kauran tai perustäysrehun ohelle. Ei sisällä lisättyjä kivennäisiä tai vitamiineja. Anna lisäksi Norra Prima kivennäistä. Käyttömäärä vieroitetut varsat 200-400g/pv, tiineet tammat (tiineyskuukaudet 9-11) 250-400 g/pv, imettävät tammat (imetyskuukaudet 1-3) 500-800 g/pv, imettävät tammat (imetyskuukaudet 4-6) 200-400g/pv, kilpahevoset 50-200g/päivä. Karkearehun valkuaispitoisuus vaikuttaa käyttömääriin."
+            },
+            "usageRate": {
+                "Varsat :": "200-400 g/pvä",
+                "Imettävät tammat imetyskuukaudet 1-3 :": "1-3 kg/pvä",
+                "Imettävät tammat, imetyskuukaudet 4-6 :": "200-400 g/pvä",
+                "Tiineet tammat :": "250-400 g/pvä",
+                "Kilpahevoset :": "50-200 g/pvä",
+                "Lisätiedot :": "Karkearehun valkuaispitoisuus vaikuttaa syöttömäärään."
+            },
+            "features": {
+                "Pakkauskoko": "0 kilogrammaa (kg)",
+                "Tilavuuspaino": "68 g/dl"
+            }
+        },
+        {
+            "title": "Norra Prima 20 kg kivennäinen",
+            "url": "norra-prima-kivennainen-20-kg",
+            "imageUrl": "/img/924631.jpg",
+            "price": 25.00,
+            "vat": 0.14,
+            "sellingPoints": [
+                "Monipuolinen ja maittava, silti vain vähän sokeria",
+                "Sisältää helposti imeytyviä orgaanisia hivenaineita",
+                "Korjaa hyvin viljaruokinnan puutteita",
+                "Runsaasti sinkkiä ja kuparia ja tärkeitä vitamiineja"
+            ],
+            "shortDescription": "Maittava Norra Prima kivennäinen on monipuolinen ja vitamiinipitoinen kivennäisrehu hevosille ja poneille. Se on suunniteltu sopimaan suomalaisen heinän ja kauran kumppaniksi.",
+            "longDescription": "Norra Prima Kivennäinen tukee urheilu- ja harrastehevosten suoritusta sekä varsojen tasaista kasvua. Kivennäisen sisältämä seleeni on osittain orgaanisessa muodossa, jolloin riittävä seleenin saanti voidaan varmistaa turvallisesti. Kalsiumrikas koostumus täydentää erityisesti viljaruokinnan kalsium- ja fosforipitoisuuksia hevoselle oikealla tavalla.",
+            "inStore": "Varastossa",
+            "stock": 10,
+            "contents": {
+                "SRV (sulava raakavalkuainen)": "4,3 %",
+                "Raakarasva": "4,8 %",
+                "Raakakuitu": "9,8 %",
+                "Tuhka": "40 %",
+                "Energia": "7,5 MJ/kg ka",
+                "Kalsium": "9,0 %",
+                "Fosfori": "1,7 %",
+                "Magnesium": "1,0 %",
+                "Natrium": "3,0 %",
+                "A-vitamiini": "70,000 IU/kg",
+                "D3-vitamiini": "17500 ky/kg",
+                "E-vitamiini": "3500 mg/kg",
+                "Koboltti": "1,55 mg/kg",
+                "Jodi": "14 mg/kg",
+                "Org. seleeni": "0,9 mg/kg",
+                "Lysiini": "0,2 %",
+                "Tärkkelys": "4,6 %",
+                "Sokeri": "5,1 %",
+                "B1-vitamiini": "205 mg/kg",
+                "B2-vitamiini": "122 mg/kg",
+                "Pantoteenihappo": "192 mg/kg",
+                "Koliinkloridi": "753 mg/kg",
+                "Niasiini": "434 mg/kg",
+                "B6-vitamiini": "120 mg/kg",
+                "Foolihappo": "88 mg/kg",
+                "B12-vitamiini": "1,6 mg/kg",
+                "Fe (rauta)": "1300 mg/kg",
+                "Biotiini": "5,5 mg/kg"
+            },
+            "moreInformation": {
+                "Pakkaustyyppi :": "pikkusäkki",
+                "Lähetyspaikka :": "Kaipiainen / Production, Kaipiainen / Warehouse",
+                "EAN :": "6418363212192",
+                "Lisätietoa :": "Valmistettu Kouvolassa. Parhainta ennen 9 kuukautta valmistuspäivästä asianmukaisesti varastoituna. Tuotteen valmistuspäivä näkyy irtorehujen osalta kuormakirjassa ja säkkirehujen osalta tuoteselosteessa.",
+                "Rehun tyyppi :": "Täydennysrehu hevosille",
+                "Koostumus :": "Kalsiumkarbonaatti, Melassileike, Vehnälese, Kauralese, Natriumkloridi, Monokalsiumfosfaatti, Vehnärehujauho, Juurikasmelassi, Kaurarehujauho, Rypsiöljy, Esiseos, Magnesiumoksidi",
+                "Käyttöohjeet :": "Norra Prima kivennäinen on monipuolinen vitamiinipitoinen ja maittava kivennäisrehu hevosille / Norra Prima Kivennäinen är ett smaklig och mångsidig mineralfoder för hästar. Annos/Dosering Harrastehevoset / hobbyhästar 150-200 g/pv/dag Urheiluhevoset / tävlingshästar 200-250 g/pv/dag Kantavat ja imettävät tammat / avelshästar 200-300 g/pv/dag Ponit / ponny 50-100 g/pv/dag"
+            },
+            "usageRate": {
+                "Harrastehevoset :": "150-200 g/pvä",
+                "Ponit :": "50-100 g/pvä",
+                "Kantavat ja imettävät tammat :": "200-300 g/pvä",
+                "Urheiluhevoset :": "200-250 g/pvä"
+            },
+            "features": {
+                "Tilavuuspaino": "80 g/dl"
+            }
+        }
+    ]
+}
