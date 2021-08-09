@@ -9,34 +9,29 @@ import {
   toggle,
   getCart,
   productFeaturesAccordionButtonClick,
-  accordionButtonClick
+  accordionButtonClick,
 } from "../app";
 import NotFound from "./NotFound.jsx";
 import Loading from "./Loading.jsx";
 
-const Product = () => {
+const Product = ({ callback }) => {
   const location = useLocation();
   const _product = location.state;
-  
+
   const [product, setProduct] = useState();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-
     if (_product) {
-
-      setProduct(_product)
-      loadProduct(_product)
-      setLoading(false)
-
-    }else {
-
+      setProduct(_product);
+      loadProduct(_product);
+      setLoading(false);
+    } else {
       axios
         .get(`api/product/${window.location.href.split("/").pop()}`)
         .then((response) => {
-          
-          setProduct(response.data)
-          setLoading(false)
+          setProduct(response.data);
+          setLoading(false);
         });
     }
 
@@ -119,7 +114,7 @@ const Product = () => {
             </a>
           </div>
           <Link
-            to={{pathname: product.url, state: product}}
+            to={{ pathname: product.url, state: product }}
             style={{ cursor: "pointer" }}
             onClick={() => {
               $(".add-cart-confirmed")[0].classList.add("d-none");
@@ -201,7 +196,7 @@ const Product = () => {
                 +
               </span>
               <div
-                onClick={validateQuantity}
+                onClick={() => validateQuantity() ? callback(true):null}
                 className="order-btn d-inline text-center w-100"
                 style={{
                   marginLeft: "20px",
@@ -366,7 +361,7 @@ const Product = () => {
                 +
               </span>
               <div
-                onClick={validateQuantity}
+                onClick={() => validateQuantity() ? callback(true) : null}
                 className="order-btn d-inline text-center w-100"
                 style={{ marginLeft: "20px", transition: "0.5s ease-in" }}
               >
@@ -562,9 +557,12 @@ const Product = () => {
                 return (
                   <div id="tab-features" className="tab d-none">
                     <div>
-                      <div 
-                      className="product_features_accordion_button d-flex align-items-center fw-bold pt-4"
-                      onClick={(event) => productFeaturesAccordionButtonClick(event.target)}>
+                      <div
+                        className="product_features_accordion_button d-flex align-items-center fw-bold pt-4"
+                        onClick={(event) =>
+                          productFeaturesAccordionButtonClick(event.target)
+                        }
+                      >
                         Tuoten ominaisuudet
                         <div className="product_features_plus_icon"></div>
                       </div>
@@ -754,7 +752,9 @@ const Product = () => {
                       <div
                         style={{ fontSize: "12px" }}
                         className="product_features_accordion_button d-flex align-items-center fw-bold pt-4"
-                        onClick={(event) => productFeaturesAccordionButtonClick(event.target)}
+                        onClick={(event) =>
+                          productFeaturesAccordionButtonClick(event.target)
+                        }
                       >
                         Tuoten ominaisuudet
                         <div className="product_features_plus_icon"></div>

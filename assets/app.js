@@ -25,12 +25,19 @@ let acc = document.getElementsByClassName("accordion_button");
 
 if (acc) {
     for (let i = 0; i < acc.length; i++) {
+
         acc[i].addEventListener("click", function () {
+            
             this.classList.toggle("open")
+            
             let panel = this.nextElementSibling
+            
             if (panel.style.maxHeight) {
+                
                 panel.style.maxHeight = null
+            
             } else {
+                
                 panel.style.maxHeight = panel.scrollHeight + "px"
             }
         });
@@ -160,15 +167,21 @@ export function validateQuantity() {
         $('.nonpositive-quantity-warning').addClass('d-none')
         $('.quantity-warning').addClass('d-none')
 
+        return true
+
     } else if (parseInt(input) < 1) {
 
         $('.nonpositive-quantity-warning').removeClass('d-none')
         $(".add-cart-confirmed").addClass("d-none")
 
+        return false
+
     } else {
 
         $('.quantity-warning').removeClass('d-none')
         $(".add-cart-confirmed").addClass("d-none")
+
+        return false
     }
 }
 
@@ -193,20 +206,14 @@ function addToCart() {
     $.post("/api/product/add",
 
         { 'product': $('.url-input').val(), 'quantity': $('.quantity-input').val() },
+        () => {
 
-        function (data) {
+            $(".add-cart-confirmed").removeClass("d-none")
+            $(".order-btn").css("opacity", 1)
+            $(".order-btn-spinner-border").addClass("d-none")
 
-            if (data) {
-
-                $(".add-cart-confirmed").removeClass("d-none")
-                $(".shopping-cart-summary").removeClass("invisible")
-                $(".shopping-cart-items-count").text(data.items.length)
-                $(".shopping-cart-total").html(data.total.toFixed(2) + "&nbsp;&euro;")
-                $(".order-btn").css("opacity", 1)
-                $(".order-btn-spinner-border").addClass("d-none")
-            }
-        },
-        'json')
+            return true
+        })
 }
 
 export function removeItem(url) {
@@ -274,6 +281,7 @@ export function accordionButtonClick(accordionButton) {
             tabs[i].classList.add('d-none')
             productPanels[i].style.maxHeight = null
             productAcc[i].classList.remove('open')
+
         } else {
 
             tabList.classList.add('tab' + productAcc[i].id.substring('product-accordion-button'.length))
@@ -297,12 +305,16 @@ export function toggle(tab) {
     tabList.classList.add(tab)
 
     for (let i = 0; i < tabs.length; i++) {
+
         tabs[i].classList.add('d-none')
 
         if (productAcc[i].id !== 'product-accordion-button' + tab.substring('tab'.length)) {
+            
             productPanels[i].style.maxHeight = null
             productAcc[i].classList.remove('open')
+        
         } else {
+            
             productPanels[i].style.maxHeight = productPanels[i].scrollHeight + "px"
             productAcc[i].classList.add('open')
         }

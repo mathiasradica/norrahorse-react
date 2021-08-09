@@ -7,65 +7,26 @@ import {
   focusPage,
   removeItem,
   changeQuantity,
-  getCart,
 } from "../app";
-import axios from "axios";
 import Loading from "./Loading";
 import EmptyCart from "./EmptyCart";
 
-const Cart = () => {
+const Cart = ({ cart, loadingCart, callback }) => {
   let history = useHistory();
-  const [cart, setCart] = useState();
-  const [loading, setLoading] = useState(true);
   const [update, setUpdate] = useState(false);
-  const location = useLocation()
-  const _cart = location.state
-
-  useEffect(() =>{
-
-    if(_cart){
-
-      setCart(_cart)
-      setLoading(false);
-
-    } else {
-
-      axios.get("api/cart/get").then((response) => {
-        
-        setCart(response.data);
-        setLoading(false);
-      });
-    }
-
-    return (
-      () => {
-        setCart(null);
-        setLoading(null);
-        setUpdate(null);
-      }
-    );
-  },[]);
 
   useEffect(() => {
-
-    axios.get("api/cart/get").then((response) => {
-        
-      setCart(response.data);
-      setLoading(false);
-      focusPage();
-      getCart()
-    });
-
+    focusPage();
+    callback(true);
     return (
       () => {
-        setCart(null);
-        setLoading(null);
         setUpdate(null);
-      }, [update]
+      },
+      [update]
     );
-  })
+  });
 
-  return loading ? (
+  return loadingCart ? (
     <Loading />
   ) : cart.items.length === 0 ? (
     <EmptyCart />
@@ -182,7 +143,9 @@ const Cart = () => {
                     style={{ width: "40%" }}
                     className="cart-contents-item d-flex"
                   >
-                    <Link to={{pathname:item.product.url, state:item.product}}>
+                    <Link
+                      to={{ pathname: item.product.url, state: item.product }}
+                    >
                       <img
                         style={{ width: "72px", height: "72px" }}
                         src={item.product.imageUrl}
@@ -191,7 +154,7 @@ const Cart = () => {
                     </Link>
                     <div className="d-inline">
                       <Link
-                        to={{pathname:item.product.url, state:item.product}}
+                        to={{ pathname: item.product.url, state: item.product }}
                         style={{ textDecoration: "none", color: "#5f5f5f" }}
                       >
                         <div>{item.product.title}</div>
@@ -330,7 +293,11 @@ const Cart = () => {
                 />
                 <div
                   className="checkout-page-btn w-100 mt-1"
-                  style={{ border: "none", textAlign: 'center', cursor: 'pointer' }}
+                  style={{
+                    border: "none",
+                    textAlign: "center",
+                    cursor: "pointer",
+                  }}
                 >
                   Käyte alennusta
                 </div>
@@ -386,7 +353,7 @@ const Cart = () => {
                           state: cart,
                         })
                       }
-                      style={{cursor: 'pointer', textAlign: 'center'}}
+                      style={{ cursor: "pointer", textAlign: "center" }}
                       className="checkout-page-btn proceed-to-checkout-btn w-100 mt-1"
                     >
                       Slirry kassalle
@@ -406,8 +373,10 @@ const Cart = () => {
             </div>
           ) : (
             <div
-            onClick = {() => history.push({pathname: "/checkout/shipping", state: cart})}
-            style = {{cursor: 'pointer', textAlign: 'center'}}
+              onClick={() =>
+                history.push({ pathname: "/checkout/shipping", state: cart })
+              }
+              style={{ cursor: "pointer", textAlign: "center" }}
               className="d-none d-lg-block checkout-page-btn proceed-to-checkout-btn mt-3"
             >
               Slirry kassalle

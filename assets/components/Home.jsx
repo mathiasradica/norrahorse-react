@@ -1,7 +1,7 @@
 import React from "react";
-import MainCarousel from "./MainCarousel.jsx";
-import ProductCarousel from "./ProductCarousel.jsx";
-import Loading from "./Loading.jsx";
+import MainCarousel from "./MainCarousel";
+import ProductCarousel from "./ProductCarousel";
+import Loading from "./Loading";
 
 const Home = ({products, loading}) => {
 

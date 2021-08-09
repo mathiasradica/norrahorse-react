@@ -1,29 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { closeNav, openNav } from "../app";
-import axios from "axios";
 
-const Layout1 = (props) => {
-
-  const [cart, setCart] = useState();
-
-  useEffect(() => {
-    axios.get("api/cart/get").then((response) => {
-      setCart(response.data);
-
-      if (response.data.items.length > 0) {
-        $(".shopping-cart-summary").removeClass("invisible");
-
-        $(".shopping-cart-items-count").text(response.data.items.length);
-
-        $(".shopping-cart-total").html(
-          response.data.total.toFixed(2) + "&nbsp;&euro;"
-        );
-      } else {
-        $(".shopping-cart-summary").addClass("invisible");
-      }
-    });
-  }, []);
+const Layout1 = ({children, cart}) => {
 
   return (
     <div className="page-container">
@@ -60,6 +39,7 @@ const Layout1 = (props) => {
           <Link className="logo" to="/">
             <img src="img/norra_logo_musta_laatikko_1.png" alt="" />
           </Link>
+          {cart ? (
           <Link
             className="shopping-cart d-flex"
             style={{ textDecoration: "none", position: "relative" }}
@@ -86,6 +66,7 @@ const Layout1 = (props) => {
               </div>
             </div>
           </Link>
+          ) : null}
         </div>
 
         <div className="header-desktop">
@@ -198,7 +179,7 @@ const Layout1 = (props) => {
         </div>
       </header>
 
-      {props.children}
+      {children}
 
       <footer>
         <div className="d-lg-none">

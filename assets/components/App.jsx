@@ -14,6 +14,14 @@ import axios from "axios";
 const App = () => {
   const [products, setProducts] = useState();
   const [loading, setLoading] = useState(true);
+  const [loadingCart, setLoadingCart] = useState(true);
+  const [cart, setCart] = useState();
+  const [update, setUpdate] = useState(false);
+
+  function callback(_update) {
+
+    setUpdate(_update);
+  }
 
   useEffect(() => {
     axios.get("/api/product/products").then((response) => {
@@ -24,14 +32,42 @@ const App = () => {
     return () => {
       setLoading();
       setProducts();
+      setCart();
     };
   }, []);
+
+  useEffect(() => {
+    axios.get("api/cart/get").then((response) => {
+      setCart(response.data);
+      setLoadingCart(false);
+
+      if (response.data.items.length > 0) {
+        $(".shopping-cart-summary").removeClass("invisible");
+
+        $(".shopping-cart-items-count").text(response.data.items.length);
+
+        $(".shopping-cart-total").html(
+          response.data.total.toFixed(2) + "&nbsp;&euro;"
+        );
+      } else {
+        $(".shopping-cart-summary").addClass("invisible");
+      }
+    });
+
+    return () => {
+
+      setLoading();
+      setLoadingCart();
+      setUpdate();
+      setCart();
+    }, [update]
+  });
 
   return (
     <Router>
       <Switch>
         <Route exact path={["/", "/checkout", "/products", "/:url"]}>
-          <Layout1>
+          <Layout1 cart={cart}>
             <Switch>
               <Route exact path="/">
                 <Home products={products} loading={loading} />
@@ -39,8 +75,12 @@ const App = () => {
               <Route exact path="/products">
                 <Products products={products} loading={loading} />
               </Route>
-              <Route exact path="/checkout" component={Cart} />
-              <Route exact path="/:url" component={Product} />
+              <Route exact path="/checkout">
+                <Cart cart={cart} loading={loadingCart} callback={callback} />
+              </Route>
+              <Route exact path="/:url">
+                <Product callback={callback} />
+              </Route>
               <Route path="*" component={NotFound} />
             </Switch>
           </Layout1>
