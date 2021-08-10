@@ -19,7 +19,6 @@ const App = () => {
   const [update, setUpdate] = useState(false);
 
   function callback(_update) {
-
     setUpdate(_update);
   }
 
@@ -37,7 +36,7 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    axios.get("api/cart/get").then((response) => {
+    axios.get("/api/cart/get").then((response) => {
       setCart(response.data);
       setLoadingCart(false);
 
@@ -54,13 +53,15 @@ const App = () => {
       }
     });
 
-    return () => {
-
-      setLoading();
-      setLoadingCart();
-      setUpdate();
-      setCart();
-    }, [update]
+    return (
+      () => {
+        setLoading();
+        setLoadingCart();
+        setUpdate();
+        setCart();
+      },
+      [update]
+    );
   });
 
   return (
@@ -88,7 +89,9 @@ const App = () => {
         <Route path={["/checkout/shipping", "/checkout/confirmation"]}>
           <Layout2>
             <Switch>
-              <Route exact path="/checkout/shipping" component={Shipping} />
+              <Route exact path="/checkout/shipping">
+                <Shipping cart={cart} loading={loadingCart} />
+              </Route>
               <Route
                 exact
                 path="/checkout/confirmation"

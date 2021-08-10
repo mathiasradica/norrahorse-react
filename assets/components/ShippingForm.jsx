@@ -2,14 +2,14 @@ import React from "react";
 import { validateForm } from "../app";
 import { useHistory } from "react-router-dom";
 
-const ShippingForm = () => {
+const ShippingForm = ({cart}) => {
   let history = useHistory();
 
   function handleSubmit() {
     
     let valid = validateForm();
 
-    if (valid) {
+    if (valid && cart.items.length > 0) {
       
       let shippingInfo = {
         
@@ -116,9 +116,8 @@ const ShippingForm = () => {
           height: "50px",
           cursor: "pointer",
           textAlign: "center",
-          lineHeight: "50px"
         }}
-        className="checkout-page-btn float-end mt-5"
+        className="checkout-page-btn float-end mt-5 p-3"
         onClick={handleSubmit}
       >
         Seuraava

@@ -7,7 +7,6 @@ import {
   validateQuantity,
   loadProduct,
   toggle,
-  getCart,
   productFeaturesAccordionButtonClick,
   accordionButtonClick,
 } from "../app";
@@ -34,8 +33,6 @@ const Product = ({ callback }) => {
           setLoading(false);
         });
     }
-
-    getCart();
 
     return () => {
       setProduct();

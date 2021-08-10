@@ -154,6 +154,7 @@ export function changeQuantity() {
     let url = $('.url-input').val()
 
     $.post('api/cart/change', { quantity: parseInt(input), url: url })
+    .then(() => focusPage())
 }
 
 export function validateQuantity() {
@@ -174,14 +175,11 @@ export function validateQuantity() {
         $('.nonpositive-quantity-warning').removeClass('d-none')
         $(".add-cart-confirmed").addClass("d-none")
 
-        return false
-
     } else {
 
         $('.quantity-warning').removeClass('d-none')
         $(".add-cart-confirmed").addClass("d-none")
 
-        return false
     }
 }
 
@@ -204,7 +202,6 @@ function addToCart() {
     $(".order-btn-spinner-border").removeClass("d-none")
 
     $.post("/api/product/add",
-
         { 'product': $('.url-input').val(), 'quantity': $('.quantity-input').val() },
         () => {
 
@@ -218,7 +215,7 @@ function addToCart() {
 
 export function removeItem(url) {
 
-    axios.get("api/cart/remove/" + url).then(() => getCart())
+    axios.get("api/cart/remove/" + url).then(() => focusPage())
 }
 
 export function toggleExpandedTotalAndTaxTable() {

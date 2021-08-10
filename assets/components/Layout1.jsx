@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { closeNav, openNav } from "../app";
 
@@ -43,7 +43,7 @@ const Layout1 = ({children, cart}) => {
           <Link
             className="shopping-cart d-flex"
             style={{ textDecoration: "none", position: "relative" }}
-            to={{ pathname: "/checkout", state: cart }}
+            to="/checkout"
           >
             <img src="img/shopping-cart.png" alt="" />
             <div
@@ -76,7 +76,7 @@ const Layout1 = ({children, cart}) => {
           <Link
             className="shopping-cart d-flex"
             style={{ textDecoration: "none", position: "relative" }}
-            to={{ pathname: "/checkout", state: cart }}
+            to="/checkout"
           >
             <img src="img/shopping-cart.png" alt="" />
             <div

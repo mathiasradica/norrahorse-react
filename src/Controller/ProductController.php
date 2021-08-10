@@ -26,9 +26,17 @@ class ProductController extends AbstractController{
     }
 
     /**
-     * @Route("/", name="home_page", defaults={"reactRouting": null}, methods={"GET"})
+     * @Route("/", name="home_page", methods={"GET"})
      */
     public function index(): Response {
+        
+        return $this->render('index.html.twig');
+    }
+
+    /**
+     * @Route("/{reactRouter}", name="pages", defaults={"reactRouting": null}, methods={"GET"})
+     */
+    public function routes(): Response {
         
         return $this->render('index.html.twig');
     }

@@ -1,14 +1,12 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import ShippingForm from "./ShippingForm";
 import TotalAndTaxTable from "./TotalAndTaxTable";
+import Loading from "./Loading"
 import { toggleExpandedTotalAndTaxTable, toggleShippingAccordion } from "../app";
 
-const Shipping = () => {
-  const location = useLocation();
-  const cart = location.state;
+const Shipping = ({cart, loading}) => {
 
-  return (
+  return loading ? <Loading /> : (
     <main>
       <div className="shipping-progress-indicator-container d-lg-block">
         <div className="d-flex mt-4 ps-4 pe-4 justify-content-around justify-content-lg-center">
@@ -102,7 +100,7 @@ const Shipping = () => {
           >
             Toimitusosoite
           </div>
-          <ShippingForm />
+          <ShippingForm cart={cart} />
         </div>
         <div
           style={{ height: "fit-content" }}

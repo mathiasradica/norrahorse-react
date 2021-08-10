@@ -45,7 +45,7 @@ class CartController extends AbstractController
     }
 
     /**
-     * @Route("/api/cart/remove/{url}", name="remove_from_cart", methods={"GET"})
+     * @Route("/api/cart/remove/{url}", name="remove_item", methods={"GET"})
      */
     public function removeItem(string $url): Response
     {
@@ -61,7 +61,7 @@ class CartController extends AbstractController
     }
 
     /**
-     * @Route("/api/cart/change", name="change_cart", methods={"POST"})
+     * @Route("/api/cart/change", name="change_quantity", methods={"POST"})
      */
     public function changeQuantity(Request $request): Response
     {

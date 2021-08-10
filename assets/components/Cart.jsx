@@ -1,32 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { Link, useHistory, useLocation } from "react-router-dom";
+import React from "react";
+import { Link, useHistory } from "react-router-dom";
 import {
   validateReduceQuantity,
   validateIncreaseQuantity,
   blurPage,
-  focusPage,
   removeItem,
   changeQuantity,
 } from "../app";
 import Loading from "./Loading";
 import EmptyCart from "./EmptyCart";
 
-const Cart = ({ cart, loadingCart, callback }) => {
+const Cart = ({ cart, loading, callback }) => {
   let history = useHistory();
-  const [update, setUpdate] = useState(false);
 
-  useEffect(() => {
-    focusPage();
-    callback(true);
-    return (
-      () => {
-        setUpdate(null);
-      },
-      [update]
-    );
-  });
-
-  return loadingCart ? (
+  return loading ? (
     <Loading />
   ) : cart.items.length === 0 ? (
     <EmptyCart />
@@ -189,9 +176,9 @@ const Cart = ({ cart, loadingCart, callback }) => {
                         className="quantity-change-btn text-center"
                         style={{ marginRight: "10px", lineHeight: "40px" }}
                         onClick={() => {
-                          validateReduceQuantity() ? changeQuantity() : null;
                           blurPage();
-                          setUpdate(true);
+                          validateReduceQuantity() ? changeQuantity() : null;
+                          callback(true);
                         }}
                       >
                         -
@@ -207,9 +194,9 @@ const Cart = ({ cart, loadingCart, callback }) => {
                         className="quantity-change-btn text-center"
                         style={{ marginLeft: "10px", lineHeight: "40px" }}
                         onClick={() => {
-                          validateIncreaseQuantity() ? changeQuantity() : null;
                           blurPage();
-                          setUpdate(true);
+                          validateIncreaseQuantity() ? changeQuantity() : null;
+                          callback(true);
                         }}
                       >
                         +
@@ -227,9 +214,9 @@ const Cart = ({ cart, loadingCart, callback }) => {
                           className="bi bi-trash"
                           viewBox="0 0 16 16"
                           onClick={() => {
-                            removeItem(item.product.url);
                             blurPage();
-                            setUpdate(true);
+                            removeItem(item.product.url);
+                            callback(true);
                           }}
                         >
                           <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
@@ -348,10 +335,7 @@ const Cart = ({ cart, loadingCart, callback }) => {
                   ) : (
                     <div
                       onClick={() =>
-                        history.push({
-                          pathname: "/checkout/shipping",
-                          state: cart,
-                        })
+                        history.push("/checkout/shipping")
                       }
                       style={{ cursor: "pointer", textAlign: "center" }}
                       className="checkout-page-btn proceed-to-checkout-btn w-100 mt-1"
@@ -374,7 +358,7 @@ const Cart = ({ cart, loadingCart, callback }) => {
           ) : (
             <div
               onClick={() =>
-                history.push({ pathname: "/checkout/shipping", state: cart })
+                history.push("/checkout/shipping")
               }
               style={{ cursor: "pointer", textAlign: "center" }}
               className="d-none d-lg-block checkout-page-btn proceed-to-checkout-btn mt-3"
